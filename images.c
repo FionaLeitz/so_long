@@ -26,7 +26,7 @@ int	destroy_end(t_params *params, t_all_img *img)
 static int	create_end(t_params *params, t_all_img *img)
 {
 	img->over.img = mlx_xpm_file_to_image(params->mlx_ptr,
-			"./xpm/game_over1.xpm", &img->over.width, &img->over.height);
+			"./xpm/game_over2.xpm", &img->over.width, &img->over.height);
 	img->win.img = mlx_xpm_file_to_image(params->mlx_ptr,
 			"./xpm/win2.xpm", &img->win.width, &img->win.height);
 	img->bye.img = mlx_xpm_file_to_image(params->mlx_ptr,

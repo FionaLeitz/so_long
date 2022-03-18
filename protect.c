@@ -15,11 +15,11 @@
 int	protect_end(t_params *params, t_all_img *img)
 {
 	if (img->over.img == NULL)
-		destroy_end(params, img);
+		return (destroy_end(params, img));
 	if (img->win.img == NULL)
-		destroy_end(params, img);
+		return (destroy_end(params, img));
 	if (img->bye.img == NULL)
-		destroy_end(params, img);
+		return (destroy_end(params, img));
 	return (1);
 }
 
