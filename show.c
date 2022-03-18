@@ -86,3 +86,24 @@ void	make_map(t_map *map, t_params *params, t_all_img *img)
 	put_item(map, params, img);
 	return ;
 }
+
+void	number(t_params *params)
+{
+	char	*s;
+	char	*s2;
+
+	s2 = ft_itoa(params->count);
+	if (params->count == 1)
+	{
+		s = ft_strjoin(s2, " move made");
+		ft_printf("%s\n", s);
+	}
+	else
+	{
+		s = ft_strjoin(s2, " moves made");
+		ft_printf("%s\n", s);
+	}
+	free(s2);
+	mlx_string_put(params->mlx_ptr, params->window_ptr, 32, 24, 0xFFFFFFFF, s);
+	free(s);
+}

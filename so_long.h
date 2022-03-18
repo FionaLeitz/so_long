@@ -87,6 +87,7 @@ int		destroy_img(t_params *params, t_all_img *img);
 void	put_perso(t_params *params, t_all_img *img, int i);
 void	make_map(t_map *map, t_params *params, t_all_img *wall);
 int		check_wall(t_map *map, int j);
+void	number(t_params *params);
 //events.c
 int		deal_key(int key, t_params *params);
 int		deal_cross(t_params *params);

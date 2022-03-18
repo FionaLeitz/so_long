@@ -35,9 +35,6 @@ static int	check_wall2(t_params *params, t_map *map, char c, int n)
 
 static void	move(t_params *params, char c, int n)
 {
-	char	*s;
-	char	*s2;
-
 	params->count++;
 	if (c == 'x')
 	{
@@ -51,14 +48,7 @@ static void	move(t_params *params, char c, int n)
 		mlx_clear_window(params->mlx_ptr, params->window_ptr);
 		make_map(params->map, params, params->img);
 	}
-	s2 = ft_itoa(params->count);
-	if (params->count == 1)
-		s = ft_strjoin(s2, " move made");
-	else
-		s = ft_strjoin(s2, " moves made");
-	free(s2);
-	mlx_string_put(params->mlx_ptr, params->window_ptr, 32, 24, 0xFFFFFFFF, s);
-	free(s);
+	number(params);
 }
 
 static void	escape(t_params *params)

@@ -105,8 +105,8 @@ int	main(int argc, char **argv)
 	mlx_hook(params.window_ptr, 17, 0, deal_cross, &params);
 	mlx_loop(params.mlx_ptr);
 	map_infos.p = -40000000;
-	while (map_infos.p++ < 400000000)
-		ft_strlen(NULL);
+//	while (map_infos.p++ < 400000000)
+//		ft_strlen(NULL);
 	clean(&params, &map_infos, &img);
 	return (0);
 }
