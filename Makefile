@@ -17,17 +17,17 @@ _ORANGE=$'\033[38;2;255;165;0m
 
 NAME		= so_long
 
-SRCS		= main.c			\
-			show.c				\
-			events.c			\
-			parsing_map.c		\
-			clean.c				\
-			images.c			\
-			protect.c			\
-			items.c				\
-			exit.c				\
-			end.c				\
-			kill.c				\
+SRCS		= srcs/main.c			\
+			srcs/show.c				\
+			srcs/events.c			\
+			srcs/parsing_map.c		\
+			srcs/clean.c			\
+			srcs/images.c			\
+			srcs/protect.c			\
+			srcs/items.c			\
+			srcs/exit.c				\
+			srcs/end.c				\
+			srcs/kill.c				\
 			
 OBJS		= ${SRCS:.c=.o}
 
